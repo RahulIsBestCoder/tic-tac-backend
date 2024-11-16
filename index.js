@@ -9,7 +9,7 @@ const app = express();
 const server = http.createServer(app);
 const io = socketIo(server, {
     cors: {
-        origin: `http://${ip}:${port}`, // Allow your React app's origin
+        origin: `https://tic-tac-2024.netlify.app`, // Allow your React app's origin
         methods: ["GET", "POST"],
         allowedHeaders: ["my-custom-header"],
         credentials: true // Allow credentials if needed
